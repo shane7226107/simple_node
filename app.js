@@ -4,10 +4,7 @@ var http    =   require('http'),
     sugar = require('sugar');
 
 // Create Express
-app = express();
-app.configure(function () {
-    app.use(express.bodyParser());
-});
+var app = express();
 
 // Create HTTP server and socket.io
 server = http.createServer(app);
