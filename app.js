@@ -18,3 +18,7 @@ server.listen(2052);
 app.get('/test', function (req, res) {
     res.send("YAA!!!");
 });
+
+app.get('/', function (req, res) {
+  res.sendfile(__dirname + '/index.html');
+});
